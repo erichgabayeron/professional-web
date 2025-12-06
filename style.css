@@ -241,7 +241,7 @@ a {
   border-radius: 10px;
 }
 
-/* CONTACT*/
+/* CONTACT */
 .container {
     display: flex;
     justify-content: center;
@@ -351,6 +351,41 @@ button {
 
 button:hover {
     background: #d46f89;
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+        padding: 40px 20px;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .left p {
+        width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .left h1 {
+        font-size: 32px;
+    }
+
+    .left h3 {
+        font-size: 16px;
+    }
 }
 
 /*FOOTER*/
